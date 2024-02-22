@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <form id="weatherForm">
+                <input type="text" name="city-name" class="textbox" id="city-name" placeholder="Digite a cidade (ex.: 'São Paulo')">
+                <input type="submit" name="button" class="button" id="getWeather" value="Obter Previsão do Tempo">
+            </form>
+            <h2 id="results" class="results">
+                <div class="initial">Obtenha a previsão do tempo do dia</div>
+            </h2>
+            <div class="clearfix"></div>
+            <div class="section">
+                <div id="city">Cidade</div>
+                <div class="weather-description">
+                    <div id="weather-info">
+                        <h2 class="date">Dia Atual</h2>
+                        <h2 class="weather">Clima</h2>
+                        <h3 class="temperature">Temperatura</h3>
+                        <div class="image"><img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="Weather Icon" style="width: 100px; height: 85px"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs/dist/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>

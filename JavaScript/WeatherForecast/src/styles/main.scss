@@ -1,0 +1,96 @@
+@use 'variables' as var;
+
+body {
+  font-family: var.$fonte-padrao;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.container {
+  margin: 20px auto;
+  max-width: 980px;
+  text-align: center;
+
+  form {
+    margin-bottom: 20px;
+
+    .textbox {
+      border: solid 2px var.$cor-borda-input;
+      min-width: 220px;
+      padding: 8px 10px;
+      margin-bottom: 1em;
+      outline: none;
+      transition: 0.7s all;
+
+      &:focus {
+        border: solid 2px var.$cor-secundaria;
+      }
+    }
+
+    .button {
+      background: var.$cor-primaria;
+      color: #fff;
+      outline: none;
+      padding: 10px 20px;
+      margin: 0 8px;
+      border: none;
+      cursor: pointer;
+      transition: 0.5s all;
+
+      &:hover {
+        background: var.$cor-secundaria;
+      }
+    }
+  }
+
+  #results {
+    font-size: 2em;
+    margin-top: 1em;
+  }
+
+  .clearfix {
+    clear: both;
+  }
+}
+
+.section {
+  position: relative;
+  margin: 1em 10px 1em 0;
+  padding: 1em 1em 2em 1em;
+  display: inline-block;
+  width: 200px;
+  height: 135px;
+  background: var.$cor-fundo;
+  overflow: hidden;
+}
+
+#city {
+  font-size: 2em;
+}
+
+.weather-description {
+  text-align: left;
+  margin-left: 120px;
+
+  #weather-info {
+    h2 {
+      font-size: 0.9em;
+      margin-bottom: 1em;
+    }
+
+    h3 {
+      padding: 0.3em 0;
+      font-size: 0.8em;
+    }
+
+    .image {
+      position: absolute;
+      top: 60px;
+      left: 1em;
+      width: 100px;
+      height: 85px;
+    }
+  }
+}
