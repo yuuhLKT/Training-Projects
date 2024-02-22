@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300;700&display=swap");
+
+:root {
+  --balck1: #202020;
+  --black2: #131b24;
+  --branco1: #e5e5e5;
+  --azul1: #263648;
+  --azul2: #202e3c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  background-color: var(--azul1);
+}
+
+.container {
+  color: var(--branco1);
+  background-color: var(--black2);
+  width: 600px;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 15px 40px -20px var(--branco1);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 28px;
+  text-align: center;
+}
+
+.todoInput {
+  width: 100%;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  font-size: 20px;
+  background-color: var(--azul1);
+  color: var(--branco1);
+}
+
+.todoInput::placeholder {
+  color: var(--branco1);
+}
+
+.todos,
+.ongoingTasks,
+.completedTasks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.taskItem {
+  background-color: var(--branco1);
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+.taskItem span {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.taskItem input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--branco1);
+}
+
+.taskItem a {
+  color: var(--black2);
+}
+
+.taskItem a svg {
+  pointer-events: none;
+  width: 25px;
+  height: 25px;
+}
+
+.completedTasks .taskItem {
+  background-color: #74c674;
+  text-decoration: line-through;
+}
+
+.completedTitle {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.empty {
+  font-size: 25px;
+}

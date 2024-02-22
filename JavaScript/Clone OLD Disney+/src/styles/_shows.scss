@@ -1,0 +1,51 @@
+@use 'variables' as var;
+
+.shows{
+    padding: 2vw 5.6vw;
+    min-height: 50vw;
+
+    &__list{
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        margin-top: 44px;
+
+        @media (max-width: 768px){
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &--is-active{
+            display: grid;
+        }
+
+        &__item{
+            list-style: none;
+
+            img{
+                max-width: 100%;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    &__tabs{
+        display: flex;
+        justify-content: center;
+
+        &__button{
+            color: var.$fontColorSecondary;
+            font-size: 20px;
+            background-color: transparent;
+            border: none;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            margin: 0 1vw;
+            cursor: pointer;
+            font-family: var.$fontBold;
+
+            &--is-active{
+                border-bottom: 5px solid #f9f9f9;
+            }
+        }
+    }
+}

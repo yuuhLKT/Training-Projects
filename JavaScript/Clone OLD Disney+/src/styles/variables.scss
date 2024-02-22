@@ -1,0 +1,30 @@
+$bgColor: #040714;
+$fontColorMain: silver;
+$fontColorSecondary: #f9f9f9;
+$fontRegular: Avenir, sans-serif;
+$fontBold: Avenir-Bold, sans-serif;
+$buttonPrimaryColor: #6421ff;
+$buttonSecondaryColor: #0063e5;
+$buttonDarkColor: #000;
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Avenir-Bold;
+    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
+
+@mixin text($fontSize: 16px){
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: $fontColorMain;
+}
+
+@mixin title($fontSize: 40px){
+    @include text($fontSize);
+    color: $fontColorSecondary;
+}

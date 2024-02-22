@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja de Veículos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container container-flex">
+        <h1>Loja de Veículos</h1>
+        <div class="menu-hambuguer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <nav>
+        <div class="container">
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#destaque">Em destaque</a></li>
+            <li><a href="#promocoes">Promoções</a></li>
+            <li><a href="">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div id="carrosel">
+      <img src="img/slide1.png" alt="Carro da Porsche" />
+      <img src="img/slide2.png" alt="Carro da BMW" />
+      <img src="img/slide3.png" alt="Carro da Ford" />
+    </div>
+
+    <section id="sobre">
+      <div class="container container-flex">
+        <img src="img/loja.jpg" alt="Imagem da Loja" />
+
+        <div>
+          <h2>Sobre a Loja de Veículos</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+            sunt consectetur explicabo consequatur tempora autem, ex possimus
+            qui iusto necessitatibus vel facere. Itaque laboriosam corrupti
+            consectetur sint quisquam quam repellendus.
+          </p>
+          <p>
+            Placeat deleniti ratione sunt consequuntur unde quaerat, in
+            voluptates accusantium officiis optio dignissimos est animi dolore
+            fugiat quis, perspiciatis dolor distinctio harum delectus aperiam ea
+            dolorem minus numquam totam? Deleniti?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="destaque">
+      <div class="container">
+        <h2>Destaque</h2>
+
+        <ul class="container-flex lista-veiculos">
+          <li>
+            <img src="img/carro-bmw.png" alt="Carro BMW" />
+            <h3>Carro BMW</h3>
+            <p>Câmbio autómatico, 4 portas, vidros e travas elétricas</p>
+            <strong>R$75.000</strong>
+            <button type="button">Tenho Interesse</button>
+          </li>
+
+          <li class="item-central">
+            <img src="img/fusca.png" alt="Carro Fusca" />
+            <h3>Carro Fusca</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <strong>R$65.000</strong>
+            <button type="button">Tenho Interesse</button>
+          </li>
+
+          <li>
+            <img src="img/moto-bmw.png" alt="Moto BMW" />
+            <h3>Moto BMW</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+            <strong>R$55.000</strong>
+            <button type="button">Tenho Interesse</button>
+          </li>
+
+          <li>
+            <img src="img/carro-bmw.png" alt="Carro BMW" />
+            <h3>Carro BMW</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+            <div class="price">
+              <strong>R$75.000</strong>
+            </div>
+            <button type="button">Tenho Interesse</button>
+          </li>
+
+          <li class="item-central">
+            <img src="img/fusca.png" alt="Carro Fusca" />
+            <h3>Carro Fusca</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+            <div class="price">
+              <strong>R$65.000</strong>
+            </div>
+            <button type="button">Tenho Interesse</button>
+          </li>
+
+          <li>
+            <img src="img/moto-bmw.png" alt="Moto BMW" />
+            <h3>Moto BMW</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+            <div class="price">
+              <strong>R$55.000</strong>
+            </div>
+            <button type="button">Tenho Interesse</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="promocoes">
+      <div class="container">
+        <h2>Promoções</h2>
+
+        <ul class="container-flex lista-veiculos">
+          <li>
+            <img src="img/carro-bmw.png" alt="Carro BMW" />
+            <h3>Carro BMW</h3>
+            <p>Câmbio autómatico, 4 portas, vidros e travas elétricas</p>
+            <div class="price">
+              <del>R$75.000</del>
+              <strong>R$65.000</strong>
+            </div>
+            <button type="button">Tenho Interesse</button>
+          </li>
+
+          <li class="item-central">
+            <img src="img/fusca.png" alt="Carro Fusca" />
+            <h3>Carro Fusca</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="price">
+              <del>R$65.000</del>
+              <strong>R$55.000</strong>
+            </div>
+            <button type="button">Tenho Interesse</button>
+          </li>
+
+          <li>
+            <img src="img/moto-bmw.png" alt="Moto BMW" />
+            <h3>Moto BMW</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+            <div class="price">
+              <del>R$55.000</del>
+              <strong>R$45.000</strong>
+            </div>
+            <button type="button">Tenho Interesse</button>
+          </li>
+        </ul>
+    </section>
+    
+    <section id="contato">
+      <div class="container">
+        <h2>Contato</h2>
+    
+        <form id="formulario-contato">
+          <div class="form-campo">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+          </div>
+          <div class="form-campo">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone-input" name="telefone">
+          </div>
+          <div class="form-campo">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div class="form-campo">
+            <label for="veiculo-interesse">Veículo de Interesse:</label>
+            <input type="text" id="veiculo-interesse" name="veiculoInteresse">
+          </div>
+          <div class="form-campo">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem"></textarea>
+          </div>
+          <div id="mensagem-sucesso" class="mensagem-sucesso"></div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container container-flex">
+        <p>
+          2024 &copy; Loja de Veículos - Todos os direitos reservados
+        </p>
+
+        <ul class="container-flex">
+          <li><img src="img/icones/facebook.png" alt="Icone Facebook"></li>
+          <li><img src="img/icones/instagram.png" alt="Icone Instagram"></li>
+          <li><img src="img/icones/youtube.png" alt="Icone Youtube"></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="plugin/jquery.mask.min.js"></script>
+    <script src="plugin/jquery.validate.min.js"></script>
+    <script src="plugin/messages_pt_BR.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

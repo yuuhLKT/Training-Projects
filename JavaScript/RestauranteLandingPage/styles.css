@@ -1,0 +1,88 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.navbar {
+  background-color: #e15f41;
+}
+
+#headerNav .nav-link.active {
+  color: #e15f41;
+  background-color: #fff;
+}
+
+#headerNav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+  color: #fff;
+}
+
+.navbar-brand {
+  font-family: Pacifico, cursive;
+}
+
+.navbar-toggler {
+  background-color: #ffeae6;
+}
+
+section h2,
+section h3 {
+  font-family: Pacifico, cursive;
+}
+
+.title {
+  color: #e15f41;
+}
+
+#sobre-restaurante,
+#cardapio {
+  background-color: #ffeae6;
+}
+
+.carousel-item img {
+  height: 40rem;
+  width: 100%;
+}
+
+.nav-cardapio .nav-link {
+  color: #e15f41;
+}
+
+.nav-cardapio .nav-link.active {
+  color: #fff;
+  background-color: #e15f41;
+}
+
+.nav-cardapio .nav-link:hover {
+  background-color: #e15f41;
+  color: #fff;
+}
+
+.social-links li {
+  list-style: none;
+  display: inline;
+}
+
+.social-links li a {
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+  height: 10rem;
+}
+
+.btn-form {
+  background-color: #e15f41;
+  outline-color: #e15f41;
+  border: 1px solid #e15f41;
+  border-radius: 4px;
+  color: #fff;
+}
+
+@media (max-width: 787px) {
+  .carousel-item img {
+    height: 280px;
+  }
+}

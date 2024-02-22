@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculadora de Médias Escolar</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <img src="img/logo.png" alt="Chapéu de Diploma" />
+        <h1>Calculadora de Média Escolar</h1>
+      </header>
+
+      <form id="form-atv">
+        <input
+          type="text"
+          id="nome-atv"
+          placeholder="Nome da atividade"
+          required
+        />
+
+        <input
+          type="number"
+          id="nota-atv"
+          placeholder="Nota"
+          min="0"
+          max="10"
+          step="0.01"
+          required
+        />
+
+        <input
+          type="number"
+          id="media-atv"
+          placeholder="Média Atividade"
+          min="0"
+          max="10"
+          step="0.01"
+          required
+        />
+
+        <input
+          type="number"
+          id="media-final"
+          placeholder="Média Final"
+          min="0"
+          max="10"
+          step="0.01"
+          required
+        />
+
+        <button type="submit" id="btn-add">Adicionar +</button>
+      </form>
+
+      <p id="error-msg"></p>
+
+      <table cellspacing="0">
+        <thead>
+          <tr>
+            <th>Nome da Atividade</th>
+            <th>Nota da Atividade</th>
+            <th>Média da Necessária</th>
+            <th>Situação</th>
+          </tr>
+        </thead>
+
+        <tbody id="corpo-table"></tbody>
+
+        <tfoot id="footer-table">
+          <tr>
+            <th>Média Final</th>
+            <th id="resultado-media">---</th>
+            <th id="media-necessaria">---</th>
+            <th id="situacao-media">---</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

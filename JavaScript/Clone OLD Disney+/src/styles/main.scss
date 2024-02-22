@@ -1,0 +1,171 @@
+@use 'variables' as var;
+@use 'hero' as hero;
+@use 'shows' as shows;
+@use 'plans' as plans;
+@use 'devices' as devices;
+@use 'faq' as faq;
+@use 'header' as header;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var.$fontRegular;
+    list-style: none;
+}
+
+body{
+    background-color: var.$bgColor;
+}
+
+.text{
+    @include var.text();
+
+    @media (max-width: 768px){
+        @include var.title(14px)
+    }
+}
+
+.text--small{
+    @include var.text(12px);
+
+    @media (max-width: 768px){
+        @include var.title(11px)
+    }
+}
+
+.text--big{
+    @include var.text(18px);
+
+    @media (max-width: 768px){
+        @include var.title(15px)
+    }
+}
+
+.link-text{
+    @include var.text();
+    color: var.$fontColorSecondary;
+    text-decoration: underline
+}
+
+.title{
+    @include var.title();
+
+    @media (max-width: 768px){
+        @include var.title(24px)
+    }
+
+}
+
+.title--small{
+    @include var.title(28px);
+
+    @media (max-width: 768px){
+        @include var.title(22px)
+    }
+}
+
+.title--big{
+    @include var.title(44px);
+
+    @media (max-width: 768px){
+        @include var.title(26px)
+    }
+}
+
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: var.$fontColorSecondary;
+    background-color: var.$buttonPrimaryColor;
+    border-radius: 4px;
+    font-family: var.$fontBold;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    border: 1px solid var.$buttonPrimaryColor;
+
+    &:hover{
+        background-color: lighten(var.$buttonPrimaryColor, 3%);
+    }
+
+    &--secondary{
+        background-color: var.$buttonSecondaryColor;
+        border-color: var.$buttonSecondaryColor;
+
+        &:hover{
+            background-color: lighten(var.$buttonSecondaryColor, 3%);
+        }
+    }
+
+    &--dark{
+        background-color: rgba(var.$buttonDarkColor, 0.8);
+        border-color: #f9f9f9;
+
+        &:hover{
+            background-color: #f9f9f9;
+            color: var.$bgColor;
+        }
+    }
+}
+
+.text-img-section{
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    @media (max-width: 768px){
+        display: block;
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+    &__text_container{
+        padding: 0 2vw;
+
+        h2{
+            margin-bottom: 24px;
+        }
+    }
+
+    &--img-full-width{
+        display: block;
+        position: relative;
+
+    img{
+        width: 100%;
+    }
+    
+    &__text_container{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        height: 100%;
+        width: calc(50% - 5.6vw);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @media (max-width: 768px){
+            position: relative;
+            left: 0;
+            width: 100%;
+        }
+
+        h2{
+            margin-bottom: 12px;
+        }
+    }
+    }
+}
+

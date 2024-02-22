@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300;700&display=swap");
+
+:root {
+  --black1: #202020;
+  --black2: #131b24;
+  --white1: #e5e5e5;
+  --blue1: #263648;
+  --blue2: #202e3c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--blue1);
+}
+
+.container {
+  color: var(--white1);
+  background-color: var(--black2);
+  width: 80%;
+  max-width: 600px;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 15px 40px -20px var(--white1);
+  position: relative;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 28px;
+  text-align: center;
+}
+
+.todoInput {
+  width: 70%;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  font-size: 20px;
+  background-color: var(--blue1);
+  color: var(--white1);
+}
+
+.todoInput::placeholder {
+  color: var(--white1);
+}
+
+.todos,
+.ongoingTasks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.ongoingTasks input[type="checkbox"] {
+  margin-left: -20px;
+}
+
+.taskItem {
+  background-color: var(--white1);
+  padding: 0.5rem 1.5rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--black1);
+}
+
+.taskItem span {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 18px;
+}
+
+.taskItem input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--white1);
+}
+
+.completedTasks input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--white1);
+}
+
+.completedTasks span {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.completedTasks {
+  background-color: #74c674;
+  text-decoration: line-through;
+  padding: 0.5rem 1.5rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--black1);
+  font-size: 18px;
+}
+
+.apagar {
+  background-color: red;
+  border-radius: 8px;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  width: 25px;
+  margin-right: 50px;
+}
+
+form button {
+  width: 150px;
+  border: none;
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  font-size: 20px;
+  background-color: green;
+  color: var(--white1);
+  cursor: pointer;
+  position: absolute;
+  margin-left: 15px;
+}

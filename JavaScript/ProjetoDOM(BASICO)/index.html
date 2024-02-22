@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Exercício</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <form>
+        <label for="campoA">Campo A:</label>
+        <input
+          type="number"
+          id="campoA"
+          name="campoA"
+          placeholder="Digite o valor para o Campo A"
+          required
+        />
+
+        <br />
+
+        <label for="campoB">Campo B:</label>
+        <input
+          type="number"
+          id="campoB"
+          name="campoB"
+          placeholder="Digite o valor para o Campo B"
+          required
+        />
+
+        <br />
+
+        <button type="submit" id="btn-enviar">Enviar</button>
+      </form>
+      <p id="erro-sucsess"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

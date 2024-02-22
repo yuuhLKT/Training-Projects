@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>ToDO</h1>
+
+      <form>
+        <input
+          type="text"
+          class="todoInput"
+          placeholder="Escreva uma tarefa"
+          minlength="4"
+          required
+        />
+        <button type="submit" class="btn-add">Adicionar +</button>
+      </form>
+
+      <div class="todos">
+        <ul class="ongoingTasks" id="ongoingTasks"></ul>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

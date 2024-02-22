@@ -1,0 +1,15 @@
+{
+  "name": "lotteryjackpot-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jackpot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Yuri Luiz",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}

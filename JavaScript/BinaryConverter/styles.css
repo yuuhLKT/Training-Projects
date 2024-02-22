@@ -1,0 +1,61 @@
+:root {
+  --balck1: #202020;
+  --black2: #131b24;
+  --branco1: #e5e5e5;
+  --azul1: #263648;
+  --azul2: #202e3c;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--black2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container {
+  background-color: var(--balck1);
+  color: var(--branco1);
+  margin-top: 200px;
+  width: 750px;
+  height: 400px;
+  border-radius: 0.62em;
+}
+
+.header {
+  font-size: 40px;
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+}
+
+.lados {
+  font-size: 35px;
+  display: flex;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.lados input {
+  font-size: 0.4em;
+  width: 250px;
+  height: 35px;
+  border-radius: 15px;
+  border: 1.5px solid #43405c;
+  text-align: center;
+}
+
+.result {
+  font-size: 1.1em;
+  text-align: center;
+  color: var(--branco1);
+  margin-top: 30px;
+}
